@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Expense Tracker</string>
+    <string name="no_expenses_added_yet">No expenses added yet.</string>
+</resources>

@@ -1,0 +1,153 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- App Heading -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expense Tracker"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:gravity="center"
+            android:layout_marginBottom="25dp"/>
+
+        <!-- Total Expenses Card -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#DFF5E5"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Expenses"
+                android:textSize="18sp"
+                android:textColor="#333333"/>
+
+            <TextView
+                android:id="@+id/tvTotalExpenses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 0.00"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#167D52"/>
+
+        </LinearLayout>
+
+        <!-- Add New Expense Heading -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add New Expense"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Amount Input -->
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Amount (₹)"
+            android:inputType="numberDecimal"
+            android:padding="12dp"/>
+
+        <!-- Category Heading -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Category"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginTop="15dp"/>
+
+        <!-- Category Dropdown -->
+
+        <Spinner
+            android:id="@+id/spCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"/>
+
+        <!-- Description Input -->
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Description"
+            android:inputType="textCapSentences"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Add Expense Button -->
+
+        <Button
+            android:id="@+id/btnAddExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Expense"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#167D52"
+            android:layout_marginTop="18dp"/>
+
+        <!-- Recent Transactions Heading -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recent Transactions"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Empty Transaction Message -->
+
+        <TextView
+            android:id="@+id/tvNoTransactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_expenses_added_yet"
+            android:textSize="15sp"
+            android:textColor="#777777"
+            android:gravity="center"
+            android:padding="15dp"/>
+
+        <!-- Transaction List Container -->
+
+        <LinearLayout
+            android:id="@+id/llTransactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </LinearLayout>
+
+</ScrollView>
